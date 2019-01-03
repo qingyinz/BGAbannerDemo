@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mingyue.bgabannerdemo.activity.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/main_guide_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/poitBanner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayInterval="3000"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_transitionEffect="defaultEffect"
+            app:banner_placeholderDrawable="@drawable/main_bagbanner_holder"
+            app:banner_indicatorGravity="bottom|center_horizontal"
+
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+            app:banner_pointContainerLeftRightPadding="10dp"
+            app:banner_pointTopBottomMargin="5dp"
+            app:banner_pointLeftRightMargin="3dp"/>
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/numBanner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayInterval="3000"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_transitionEffect="defaultEffect"
+            app:banner_indicatorGravity="bottom|right"
+            app:banner_placeholderDrawable="@drawable/main_bagbanner_holder"
+
+            app:banner_isNumberIndicator="true"
+            app:banner_numberIndicatorBackground="@drawable/shape_number_indicator_background"
+            app:banner_numberIndicatorTextColor="@android:color/white"
+            app:banner_numberIndicatorTextSize="10sp"
+            app:banner_isNeedShowIndicatorOnOnlyOnePage="true"/>
+    </LinearLayout>
+
+
+
+</ScrollView>
+
